@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Healthcare Hospital</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#medicines">Medicines</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Healthcare Hospital</h1>
+            <p>Providing Quality Healthcare Services</p>
+        </section>
+
+        <section id="appointments" class="section">
+            <h2>Book an Appointment</h2>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <img src="sarah.webp" alt="Doctor 1">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p>Cardiologist</p>
+                    <button onclick="bookAppointment('Dr. Sarah Johnson')">Book Appointment</button>
+                </div>
+                <div class="doctor-card">
+                    <img src="michael.webp" alt="Doctor 2">
+                    <h3>Dr. Michael Chen</h3>
+                    <p>Neurologist</p>
+                    <button onclick="bookAppointment('Dr. Michael Chen')">Book Appointment</button>
+                </div>
+                <div class="doctor-card">
+                    <img src="emily.webp" alt="Doctor 3">
+                    <h3>Dr. Emily Brown</h3>
+                    <p>Pediatrician</p>
+                    <button onclick="bookAppointment('Dr. Emily Brown')">Book Appointment</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="medicines" class="section">
+            <h2>Available Medicines</h2>
+            <div class="medicines-list">
+                <div class="medicine-item">
+                    <h3>Paracetamol</h3>
+                    <p>Pain Relief Medicine</p>
+                    <p class="price">$5.99</p>
+                    <button onclick="buyMedicine('Paracetamol')">Buy Now</button>
+                </div>
+                <div class="medicine-item">
+                    <h3>Amoxicillin</h3>
+                    <p>Antibiotic</p>
+                    <p class="price">$12.99</p>
+                    <button onclick="buyMedicine('Amoxicillin')">Buy Now</button>
+                </div>
+                <div class="medicine-item">
+                    <h3>Ibuprofen</h3>
+                    <p>Anti-inflammatory</p>
+                    <p class="price">$7.99</p>
+                    <button onclick="buyMedicine('Ibuprofen')">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <button onclick="showAbout()">Learn More About Us</button>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <button onclick="showContact()">Get Contact Information</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Healthcare Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
